@@ -1,0 +1,96 @@
+#wrap{
+	
+	width: 90%;
+}
+#lineTabs{
+	height:30px;
+	list-style:none;
+	
+	padding:0px;
+	padding-right:30px;
+	padding-left:10px;
+	width:600px;
+}
+#lineTabs li{
+	display:block;
+	float:right;
+	margin:0px 0 0 30px;
+	padding:0px;
+	position:relative;
+	overflow:visible;
+	text-align:center;
+	width:110px;
+}
+
+
+#lineTabs li a{
+	/*background:url(img/tab.png) no-repeat; */
+	background-color: rgb(129, 180, 66);
+	border-radius: 10px;
+	border: 3px solid white;
+	color:white;
+	font-weight: bold;
+	display:block;
+	font:normal 14px Verdana;
+	height:37px;
+	margin:0px -80px;
+	outline:none;
+	padding:7px 30px;
+	position:relative;
+	text-decoration:none;
+	width:100px;
+}
+#lineTabs li a.active{
+	/*background:url(img/tab_act.png) no-repeat;*/
+	background-color: white;
+	color:rgb(129, 180, 66);
+	z-index:50;
+}
+#lineTabs li a:hover{
+	/*background:url(img/tab_act.png) no-repeat;*/
+	background-color: white;
+	color: rgb(129, 180, 66);
+	z-index:30;
+}
+#content{
+	background:transparent;
+
+	display:block;
+	float:left;
+	clear:left;
+	height:auto;
+	margin:0px;
+	
+	position:relative;
+	text-align:justify;
+	width:100%;
+}
+#content div{
+	background:transparent;
+	display:none;
+	height:auto;
+	float:left;
+	clear:both;
+	left:0px;
+	margin:0px;
+	padding:0px;
+	position:static;
+	top:0px;
+	width:100%;
+}
+#content div p{
+	margin:5px 0px;
+	padding:0px;
+}
+
+@media screen and (max-width: 600px) and (min-width: 330px) {
+	#lineTabs {
+		width: 217px;
+	}
+}
+
+@media screen and (max-width: 330px) and (min-width: 200px) {
+	#lineTabs {
+		width: 217px;
+	}
+}
